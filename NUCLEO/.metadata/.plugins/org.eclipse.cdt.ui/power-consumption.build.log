@@ -1,0 +1,10 @@
+09:16:37 **** Incremental Build of configuration Debug for project power-consumption ****
+make -j8 all 
+arm-none-eabi-size   power-consumption.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27660	     24	   5840	  33524	   82f4	power-consumption.elf
+Finished building: default.size.stdout
+ 
+
+09:16:38 Build Finished. 0 errors, 0 warnings. (took 703ms)
+

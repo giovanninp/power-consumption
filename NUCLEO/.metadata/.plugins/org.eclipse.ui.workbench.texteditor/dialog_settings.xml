@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="tx_queue"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="tra"/>
+			<item value="tx_queue"/>
+			<item value="tx_que"/>
+			<item value="tx_que["/>
+			<item value="USER CODE BEGIN USART1"/>
+			<item value="USER CODE BEGIN USART2"/>
+			<item value="USER CODE BEGIN USART"/>
+			<item value="USER CODE BEGIN USART1_Init 2"/>
+			<item value="USER CODE BEGIN USART1_Init"/>
+			<item value="USER CODE BEGIN USART1_Init "/>
+			<item value="IRQHan"/>
+			<item value="USER CODE BEGIN"/>
+			<item value="USER CODE USART"/>
+			<item value="USER CODE USAR2"/>
+			<item value="USER CODE BEGIN 4"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="884"/>
+		<item key="DIALOG_Y_ORIGIN" value="180"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="384"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+</section>

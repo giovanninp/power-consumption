@@ -21,8 +21,13 @@
 #include <FirebaseESP8266.h>
 #endif
 
+#include <SoftwareSerial.h>
+
 //Provide the RTDB payload printing info and other helper functions.
 #include <addons/RTDBHelper.h>
+
+#define Pin_ST_NUCLEO_RX    5  //Pino D1 da placa Node MCU
+#define Pin_ST_NUCLEO_TX    4  //Pino D2 da placa Node MCU
 
 /* 1. Define the WiFi credentials */
 #define WIFI_SSID "NET_2G37F336"
@@ -31,6 +36,8 @@
 /* 2. If work with RTDB, define the RTDB URL and database secret */
 #define DATABASE_URL "https://se2021-2-tng-default-rtdb.firebaseio.com" //<databaseName>.firebaseio.com or <databaseName>.<region>.firebasedatabase.app
 #define DATABASE_SECRET "HwkLuzWqGzOTWHAKmPIZUCUOF74BjCG5IrZDktaZ"
+
+SoftwareSerial SSerial(Pin_ST_NUCLEO_RX, Pin_ST_NUCLEO_TX);
 
 /* 3. Define the Firebase Data object */
 FirebaseData fbdo;
@@ -79,19 +86,28 @@ void setupConnection() {
 }
 
 void setup() {
+    pinMode(2, INPUT);
     Serial.begin(115200);
+    SSerial.begin(115200);
     setupConnection();
 }
 
 /* SECTION: MAIN */
 
+int input = 0;
+
 bool setValue(int value) {
   return Firebase.setInt(fbdo, "/power", value);
 }
 
+void read() {
+  if (SSerial.available())
+    Serial.write(SSerial.read());
+}
 
 void loop()
 {
+    read();
     if (millis() - dataMillis > 5000)
     {
         dataMillis = millis();
