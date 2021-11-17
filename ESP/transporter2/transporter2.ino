@@ -94,13 +94,7 @@ void setup() {
 
 /* SECTION: MAIN */
 
-int input = 0;
-
 char message[30];
-
-bool setValue(int value) {
-  return Firebase.setInt(fbdo, "/power", value);
-}
 
 bool setStringValue(char * incomming) {
   return Firebase.setString(fbdo, "/data", incomming);
