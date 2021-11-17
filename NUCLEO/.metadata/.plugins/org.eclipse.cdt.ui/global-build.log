@@ -964,3 +964,826 @@ arm-none-eabi-size   UART_SERIAL.elf
   30120	     24	   5744	  35888	   8c30	UART_SERIAL.elf
 Finished building: default.size.stdout
  
+22:12:30 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_usart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_utils.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_timebase_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_timebase_tim.d" -MT"Core/Src/stm32l4xx_hal_timebase_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_timebase_tim.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  40180	    124	   5868	  46172	   b45c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:12:54 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40180	    124	   5868	  46172	   b45c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+22:15:45 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:131:14: warning: passing argument 1 of 'sendString' makes pointer from integer without a cast [-Wint-conversion]
+  131 |   sendString(read_voltage(), USART_2);
+      |              ^~~~~~~~~~~~~~
+      |              |
+      |              uint16_t {aka short unsigned int}
+../Core/Src/main.c:102:24: note: expected 'char *' but argument is of type 'uint16_t' {aka 'short unsigned int'}
+  102 | void sendString(char * str, char usart){
+      |                 ~~~~~~~^~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  40180	    124	   5868	  46172	   b45c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:22:05 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:131:15: warning: passing argument 1 of 'sendString' makes pointer from integer without a cast [-Wint-conversion]
+  131 |    sendString(temp, USART_2);
+      |               ^~~~
+      |               |
+      |               uint16_t {aka short unsigned int}
+../Core/Src/main.c:104:24: note: expected 'char *' but argument is of type 'uint16_t' {aka 'short unsigned int'}
+  104 | void sendString(char * str, char usart){
+      |                 ~~~~~~~^~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  35752	     24	   5840	  41616	   a290	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:24:49 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38220	    124	   5868	  44212	   acb4	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:26:18 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38220	    124	   5868	  44212	   acb4	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:28:57 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38224	    124	   5868	  44216	   acb8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:32:08 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:122:9: warning: returning 'int' from a function with return type 'char *' makes pointer from integer without a cast [-Wint-conversion]
+  122 |  return sprintf(result, "%d\r\n", value);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:227:5: warning: 'main' is normally a non-static function [-Wmain]
+  227 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:370:13: error: invalid storage class for function 'MX_ADC1_Init'
+  370 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:434:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  434 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:469:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  469 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:559:13: error: invalid storage class for function 'MX_DMA_Init'
+  559 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:577:13: error: invalid storage class for function 'MX_GPIO_Init'
+  577 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:661:1: error: expected declaration or statement at end of input
+  661 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:56:13: warning: 'MX_GPIO_Init' used but never defined
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: warning: 'MX_USART2_UART_Init' used but never defined
+   57 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:58:13: warning: 'MX_DMA_Init' used but never defined
+   58 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_USART1_UART_Init' used but never defined
+   59 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_ADC1_Init' used but never defined
+   60 | static void MX_ADC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:652:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  652 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:635:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  635 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:616:6: warning: 'StartDefaultTask' defined but not used [-Wunused-function]
+  616 | void StartDefaultTask(void const * argument)
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:577:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  577 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:559:13: warning: 'MX_DMA_Init' defined but not used [-Wunused-function]
+  559 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:469:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  469 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:434:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  434 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:370:13: warning: 'MX_ADC1_Init' defined but not used [-Wunused-function]
+  370 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:319:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  319 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:227:5: warning: 'main' defined but not used [-Wunused-function]
+  227 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:185:6: warning: 'USART_1_IRQHandler' defined but not used [-Wunused-function]
+  185 | void USART_1_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:149:6: warning: 'USART_2_IRQHandler' defined but not used [-Wunused-function]
+  149 | void USART_2_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:33:02 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:122:9: warning: returning 'int' from a function with return type 'char *' makes pointer from integer without a cast [-Wint-conversion]
+  122 |  return sprintf(result, "%d\r\n", value);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:228:5: warning: 'main' is normally a non-static function [-Wmain]
+  228 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:371:13: error: invalid storage class for function 'MX_ADC1_Init'
+  371 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:435:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  435 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:470:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  470 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:560:13: error: invalid storage class for function 'MX_DMA_Init'
+  560 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:578:13: error: invalid storage class for function 'MX_GPIO_Init'
+  578 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:662:1: error: expected declaration or statement at end of input
+  662 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:56:13: warning: 'MX_GPIO_Init' used but never defined
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: warning: 'MX_USART2_UART_Init' used but never defined
+   57 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:58:13: warning: 'MX_DMA_Init' used but never defined
+   58 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_USART1_UART_Init' used but never defined
+   59 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_ADC1_Init' used but never defined
+   60 | static void MX_ADC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:653:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  653 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:636:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  636 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:617:6: warning: 'StartDefaultTask' defined but not used [-Wunused-function]
+  617 | void StartDefaultTask(void const * argument)
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:578:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  578 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:560:13: warning: 'MX_DMA_Init' defined but not used [-Wunused-function]
+  560 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:470:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  470 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:435:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  435 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:371:13: warning: 'MX_ADC1_Init' defined but not used [-Wunused-function]
+  371 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:320:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  320 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:228:5: warning: 'main' defined but not used [-Wunused-function]
+  228 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:186:6: warning: 'USART_1_IRQHandler' defined but not used [-Wunused-function]
+  186 | void USART_1_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:150:6: warning: 'USART_2_IRQHandler' defined but not used [-Wunused-function]
+  150 | void USART_2_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:34:09 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+../Core/Src/main.c:229:5: warning: 'main' is normally a non-static function [-Wmain]
+  229 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:372:13: error: invalid storage class for function 'MX_ADC1_Init'
+  372 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:436:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  436 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:471:13: error: invalid storage class for function 'MX_USART2_UART_Init'
+  471 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:561:13: error: invalid storage class for function 'MX_DMA_Init'
+  561 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:579:13: error: invalid storage class for function 'MX_GPIO_Init'
+  579 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:663:1: error: expected declaration or statement at end of input
+  663 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:56:13: warning: 'MX_GPIO_Init' used but never defined
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: warning: 'MX_USART2_UART_Init' used but never defined
+   57 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:58:13: warning: 'MX_DMA_Init' used but never defined
+   58 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_USART1_UART_Init' used but never defined
+   59 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_ADC1_Init' used but never defined
+   60 | static void MX_ADC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:654:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  654 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:637:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  637 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:618:6: warning: 'StartDefaultTask' defined but not used [-Wunused-function]
+  618 | void StartDefaultTask(void const * argument)
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:579:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  579 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:561:13: warning: 'MX_DMA_Init' defined but not used [-Wunused-function]
+  561 | static void MX_DMA_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:471:13: warning: 'MX_USART2_UART_Init' defined but not used [-Wunused-function]
+  471 | static void MX_USART2_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:436:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  436 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:372:13: warning: 'MX_ADC1_Init' defined but not used [-Wunused-function]
+  372 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:321:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  321 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:229:5: warning: 'main' defined but not used [-Wunused-function]
+  229 | int main(void)
+      |     ^~~~
+../Core/Src/main.c:187:6: warning: 'USART_1_IRQHandler' defined but not used [-Wunused-function]
+  187 | void USART_1_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:151:6: warning: 'USART_2_IRQHandler' defined but not used [-Wunused-function]
+  151 | void USART_2_IRQHandler(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:34:18 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38256	    124	   5868	  44248	   acd8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:34:25 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38256	    124	   5868	  44248	   acd8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+22:35:52 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38256	    124	   5868	  44248	   acd8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:40:48 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  34504	     24	   5840	  40368	   9db0	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:43:47 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38232	    124	   5868	  44224	   acc0	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:44:47 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uint16_to_string':
+../Core/Src/main.c:123:9: warning: function returns address of local variable [-Wreturn-local-addr]
+  123 |  return result;
+      |         ^~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38224	    124	   5868	  44216	   acb8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:48:12 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38256	    124	   5868	  44248	   acd8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:54:45 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:123:11: warning: unused variable 'potentiometer_buff' [-Wunused-variable]
+  123 |  uint16_t potentiometer_buff;
+      |           ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38260	    124	   5868	  44252	   acdc	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:55:22 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38260	    124	   5868	  44252	   acdc	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:57:51 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38260	    124	   5868	  44252	   acdc	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:59:56 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38284	    124	   5868	  44276	   acf4	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:20:41 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38284	    124	   5868	  44276	   acf4	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:24:54 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38316	    124	   5868	  44308	   ad14	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:26:35 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:122:10: warning: unused variable 'caracter' [-Wunused-variable]
+  122 |  uint8_t caracter;
+      |          ^~~~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38212	    124	   5868	  44204	   acac	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:30:00 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:122:10: warning: unused variable 'caracter' [-Wunused-variable]
+  122 |  uint8_t caracter;
+      |          ^~~~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38188	    124	   5868	  44180	   ac94	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:38:19 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:122:10: warning: unused variable 'caracter' [-Wunused-variable]
+  122 |  uint8_t caracter;
+      |          ^~~~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38212	    124	   5868	  44204	   acac	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:46:28 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'voltage_scanner':
+../Core/Src/main.c:71:15: error: expected ')' before ';' token
+   71 | #define TRUE 1;
+      |               ^
+../Core/Src/main.c:129:8: note: in expansion of macro 'TRUE'
+  129 |  while(TRUE) {
+      |        ^~~~
+../Core/Src/main.c:129:7: note: to match this '('
+  129 |  while(TRUE) {
+      |       ^
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:46:56 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38240	    124	   5868	  44232	   acc8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:47:02 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38240	    124	   5868	  44232	   acc8	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+22:49:43 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:149:6: warning: unused variable 'countdown' [-Wunused-variable]
+  149 |  int countdown = 1000;
+      |      ^~~~~~~~~
+../Core/Src/main.c:147:7: warning: unused variable 'potentiometer_result_buff' [-Wunused-variable]
+  147 |  char potentiometer_result_buff[13];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:11: warning: variable 'potentiometer_buff' set but not used [-Wunused-but-set-variable]
+  146 |  uint16_t potentiometer_buff;
+      |           ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:309:19: error: 'vParam' undeclared (first use in this function)
+  309 |   xTaskCreate(cli(vParam),    /* Nome da funcao que contem a task */
+      |                   ^~~~~~
+../Core/Src/main.c:309:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:50:29 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'cli':
+../Core/Src/main.c:149:6: warning: unused variable 'countdown' [-Wunused-variable]
+  149 |  int countdown = 1000;
+      |      ^~~~~~~~~
+../Core/Src/main.c:147:7: warning: unused variable 'potentiometer_result_buff' [-Wunused-variable]
+  147 |  char potentiometer_result_buff[13];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:11: warning: variable 'potentiometer_buff' set but not used [-Wunused-but-set-variable]
+  146 |  uint16_t potentiometer_buff;
+      |           ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38356	    124	   5868	  44348	   ad3c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 
+22:50:35 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38356	    124	   5868	  44348	   ad3c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+22:51:19 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "UART_SERIAL.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Dev\aulas\SE\P2\NUCLEO\UART_SERIAL\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_SERIAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: UART_SERIAL.elf
+ 
+arm-none-eabi-size   UART_SERIAL.elf 
+arm-none-eabi-objdump -h -S  UART_SERIAL.elf  > "UART_SERIAL.list"
+arm-none-eabi-objcopy  -O binary  UART_SERIAL.elf  "UART_SERIAL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  38340	    124	   5868	  44332	   ad2c	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+Finished building: UART_SERIAL.bin
+ 
+Finished building: UART_SERIAL.list
+ 

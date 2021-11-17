@@ -103,6 +103,7 @@ bool setValue(int value) {
 void read() {
   if (SSerial.available())
     Serial.write(SSerial.read());
+    Serial.write('\r\n');
 }
 
 void loop()

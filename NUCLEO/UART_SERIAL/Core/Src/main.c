@@ -24,6 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "string.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,6 +42,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+ADC_HandleTypeDef hadc1;
+
 UART_HandleTypeDef huart1;
 
 osThreadId defaultTaskHandle;
@@ -54,6 +57,7 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_ADC1_Init(void);
 void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
@@ -63,6 +67,9 @@ void StartDefaultTask(void const * argument);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t txData[13] = "Hello World\r\n";
+
+#define TRUE  1
+#define FALSE 0
 
 #define TX_QUEUE_SIZE 128
 #define RX_QUEUE_SIZE 5
@@ -75,6 +82,16 @@ QueueHandle_t tx_queue_2;
 QueueHandle_t rx_queue_2;
 SemaphoreHandle_t uart_1_mutex = NULL;
 SemaphoreHandle_t uart_2_mutex = NULL;
+
+uint16_t read_voltage(void) {
+	HAL_ADC_Start(&hadc1);
+
+	HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+
+	uint16_t input = HAL_ADC_GetValue(&hadc1);
+
+	return input;
+}
 
 void sendchar(char c, char usart){
 	if(usart == USART_1){
@@ -103,23 +120,44 @@ char readchar(char usart){
 	return caracter;
 }
 
+void voltage_scanner(void * vParam) {
+	uint16_t potentiometer_buff;
+	char potentiometer_result_buff[13];
+
+	int countdown = 1000;
+
+	while(TRUE) {
+		potentiometer_buff = read_voltage();
+
+		if(!countdown) {
+			sprintf(potentiometer_result_buff, "%d", potentiometer_buff);
+			sendString(potentiometer_result_buff, USART_1);
+			sendString(";\r", USART_1);
+			countdown = 1000;
+		} else {
+			countdown--;
+		}
+	}
+}
+
 void cli(void * vParam)
 {
 	uint8_t caracter;
-	while(1)
+
+	while(TRUE)
 	{
 		caracter = readchar(USART_2);
 		if(caracter == 'h' || caracter == 'H'){
 			sendString("Teste Serial\r\n", USART_1);
 		} else if(caracter == 't') {
-			sendString("Teste Serial\r\n", USART_2);
+			sendString("Teste Terminal\r\n", USART_2);
 		}
 	}
 }
 
 void usart_1_fcn(void * vParam){
 	char c;
-	while(1){
+	while(TRUE){
 		c = readchar(USART_1);
 		if( c != 0){
 			sendchar(c, USART_2);
@@ -232,6 +270,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_DMA_Init();
   MX_USART1_UART_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   uart_1_mutex = xSemaphoreCreateMutex();
   uart_2_mutex = xSemaphoreCreateMutex();
@@ -263,6 +302,13 @@ int main(void)
 
   xTaskCreate(cli,    /* Nome da funcao que contem a task */
    		  	  "cli",     /* Nome descritivo */
+ 			  configMINIMAL_STACK_SIZE,   /* tamanho da pilha da task */
+ 			  NULL,       /* parametro para a task */
+ 			  1,          /* nivel de prioridade */
+ 			  NULL);      /* ponteiro para o handle da task */
+
+  xTaskCreate(voltage_scanner,    /* Nome da funcao que contem a task */
+   		  	  "voltage_scanner",     /* Nome descritivo */
  			  configMINIMAL_STACK_SIZE,   /* tamanho da pilha da task */
  			  NULL,       /* parametro para a task */
  			  1,          /* nivel de prioridade */
@@ -340,6 +386,70 @@ void SystemClock_Config(void)
   /** Enable MSI Auto calibration
   */
   HAL_RCCEx_EnableMSIPLLMode();
+}
+
+/**
+  * @brief ADC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_ADC1_Init(void)
+{
+
+  /* USER CODE BEGIN ADC1_Init 0 */
+
+  /* USER CODE END ADC1_Init 0 */
+
+  ADC_MultiModeTypeDef multimode = {0};
+  ADC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN ADC1_Init 1 */
+
+  /* USER CODE END ADC1_Init 1 */
+  /** Common config
+  */
+  hadc1.Instance = ADC1;
+  hadc1.Init.ClockPrescaler = ADC_CLOCK_ASYNC_DIV1;
+  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
+  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.LowPowerAutoWait = DISABLE;
+  hadc1.Init.ContinuousConvMode = DISABLE;
+  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
+  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+  hadc1.Init.DMAContinuousRequests = DISABLE;
+  hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
+  hadc1.Init.OversamplingMode = DISABLE;
+  if (HAL_ADC_Init(&hadc1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure the ADC multi-mode
+  */
+  multimode.Mode = ADC_MODE_INDEPENDENT;
+  if (HAL_ADCEx_MultiModeConfigChannel(&hadc1, &multimode) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure Regular Channel
+  */
+  sConfig.Channel = ADC_CHANNEL_5;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+  sConfig.SingleDiff = ADC_SINGLE_ENDED;
+  sConfig.OffsetNumber = ADC_OFFSET_NONE;
+  sConfig.Offset = 0;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN ADC1_Init 2 */
+
+  /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
