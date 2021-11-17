@@ -130,10 +130,9 @@ void voltage_scanner(void * vParam) {
 		potentiometer_buff = read_voltage();
 
 		if(!countdown) {
-			sprintf(potentiometer_result_buff, "%d,", potentiometer_buff);
-			sendString("[", USART_1);
+			sprintf(potentiometer_result_buff, "%d", potentiometer_buff);
 			sendString(potentiometer_result_buff, USART_1);
-			sendString("]\r", USART_1);
+			sendString(";\r", USART_1);
 			countdown = 1000;
 		} else {
 			countdown--;
