@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:power-consumption,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:power-consumption2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_SERIAL
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_SERIAL
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_SERIAL/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_SERIAL/activeLaunchTarget=null\:---

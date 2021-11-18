@@ -1,0 +1,26 @@
+.container {
+  --color1: #F1A3B2;
+  --color2: #EB62BC;
+  display: flex;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.turned {
+  background-image: linear-gradient(var(--color1), var(--color2));
+  border: 1px solid transparent;
+  color: #000;
+}
+
+.title {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
