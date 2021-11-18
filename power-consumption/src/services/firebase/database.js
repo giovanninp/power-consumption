@@ -1,4 +1,4 @@
-import { getDatabase, ref, onValue } from "firebase/database";
+import { getDatabase, ref, onValue, set as setter } from "firebase/database";
 
 const db = getDatabase();
 
@@ -9,4 +9,9 @@ export default (onChange = () => null) => {
     const data = snap.val();
     onChange(data);
   });
+};
+
+export const set = (key, value) => {
+  const dataRef = ref(db, `${key}`);
+  setter(dataRef, value);
 };

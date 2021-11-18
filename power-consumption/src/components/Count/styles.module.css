@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  color: #a8a8a8;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.value {
+  display: flex;
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: bold;
+  transform: translateY(0.5rem);
+}
+
+.unit {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+}

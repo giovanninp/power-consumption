@@ -56,8 +56,7 @@ int count = 0;
 void setupConnection() {
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     Serial.print("Connecting to Wi-Fi");
-    while (WiFi.status() != WL_CONNECTED)
-    {
+    while (WiFi.status() != WL_CONNECTED) {
         Serial.print(".");
         delay(300);
     }
@@ -86,7 +85,6 @@ void setupConnection() {
 }
 
 void setup() {
-    pinMode(2, INPUT);
     Serial.begin(115200);
     SSerial.begin(115200);
     setupConnection();
@@ -95,12 +93,54 @@ void setup() {
 /* SECTION: MAIN */
 
 char message[30];
+int ledSwitch = 0;
 
 bool setStringValue(char * incomming) {
   return Firebase.setString(fbdo, "/data", incomming);
 }
 
-void read() {
+bool firebaseCheck(char * key) {
+  if(Firebase.RTDB.getInt(&fbdo, key)) {
+    return fbdo.intData() == 1;
+  }
+  return false;
+}
+
+void serialWrite(char value) {
+    if (SSerial.available()) SSerial.write(value);
+}
+
+void getLed() {
+  char command = 'l';
+  
+  if(firebaseCheck("led")) {
+    command = 'f';
+  }
+ 
+  serialWrite(command);
+}
+
+void getPower(){
+  char command = 's';
+  
+  if(firebaseCheck("power")) {
+    command = 'c';
+  }
+ 
+  serialWrite(command);    
+}
+
+void getGenerator() {
+  char command = 'b';
+  
+  if(firebaseCheck("generator")) {
+    command = 'a';
+  }
+ 
+  serialWrite(command);
+}
+
+void bridge() {
   int posix = 1;
   while (SSerial.available()) {
     if(SSerial.read() == '[') {
@@ -110,9 +150,23 @@ void read() {
   }
 }
 
+void run_command(char command) {
+  SSerial.write(command);  
+}
+
+char captured_value = 0;
+
+void cycle() {
+  bridge();
+  getPower();
+  getLed();
+  getGenerator();  
+}
+
 void loop()
 {
-    read();
+    cycle();
+
     if (millis() - dataMillis > 5000)
     {
         dataMillis = millis();

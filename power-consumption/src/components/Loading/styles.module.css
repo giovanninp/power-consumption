@@ -1,0 +1,33 @@
+@keyframes animated {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #00000050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.indicator {
+  display: flex;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 1rem;
+  animation: animated 500ms alternate infinite;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+}
