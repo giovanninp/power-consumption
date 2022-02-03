@@ -592,3 +592,17 @@ arm-none-eabi-size   UART_SERIAL.elf
   43480	    120	   6048	  49648	   c1f0	UART_SERIAL.elf
 Finished building: default.size.stdout
  
+09:15:11 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43480	    120	   6048	  49648	   c1f0	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
+09:45:00 **** Incremental Build of configuration Debug for project UART_SERIAL ****
+make -j8 all 
+arm-none-eabi-size   UART_SERIAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43480	    120	   6048	  49648	   c1f0	UART_SERIAL.elf
+Finished building: default.size.stdout
+ 
